@@ -155,12 +155,13 @@ header{position:sticky;top:0;z-index:100;background:rgba(253,253,252,.94);backdr
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.19,1,.22,1)}
 .faq-a p{padding:0 1.4rem 1.4rem;color:var(--muted);font-size:.92rem;max-width:70ch}
 /* contact */
+.contact-grid>*{min-width:0}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
 .contact-card-box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:2rem}
 .contact-card-box h3{font-weight:800;font-size:1.3rem;color:var(--ink);margin-bottom:1.2rem}
 .field{margin-bottom:1.1rem}
 .field label{display:block;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
-.field input,.field select,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:.85rem .95rem;font-family:var(--body);font-size:.95rem;transition:border-color .2s}
+.field input,.field select,.field textarea{max-width:100%;width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:.85rem .95rem;font-family:var(--body);font-size:.95rem;transition:border-color .2s}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,118,110,.14)}
 .field textarea{min-height:110px;resize:vertical}
 .field .err{color:#DC2626;font-size:.78rem;margin-top:.35rem;display:none}
